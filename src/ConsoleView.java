@@ -19,4 +19,9 @@ public class ConsoleView {
     public void showFinalData(String data) {
         System.out.println("Final combined data: " + data);
     }
+
+
+    public void displayMessage(String message) {
+        System.out.println(message);
+    }
 }

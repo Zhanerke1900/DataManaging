@@ -16,4 +16,16 @@ public class DataModel {
     public void appendData(String moreData) {
         this.data = this.data + " | " + moreData;
     }
+
+    public void clearData() {
+        this.data = "";
+    }
+
+    public boolean hasData() {
+        return !this.data.isEmpty();
+    }
+
+    public void prependData(String newData) {
+        this.data = newData + " | " + this.data;
+    }
 }

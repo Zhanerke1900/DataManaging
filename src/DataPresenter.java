@@ -19,4 +19,25 @@ public class DataPresenter {
         model.appendData(moreData);
         view.showFinalData(model.getData());
     }
+
+    public void prependData() {
+        String newData = view.getInput("Enter data to prepend: ");
+        model.prependData(newData);
+        view.showFinalData(model.getData());
+    }
+
+
+    public void clearData() {
+        model.clearData();
+        view.showFinalData(model.getData());
+    }
+
+
+    public void checkData() {
+        if (model.hasData()) {
+            view.displayMessage("Data exists: " + model.getData());
+        } else {
+            view.displayMessage("No data available.");
+        }
+    }
 }

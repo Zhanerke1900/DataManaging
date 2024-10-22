@@ -6,5 +6,9 @@ public class Main {
 
         presenter.updateData();
         presenter.appendData();
+        presenter.prependData();
+        presenter.checkData();
+        presenter.clearData();
+        presenter.checkData();
     }
 }
